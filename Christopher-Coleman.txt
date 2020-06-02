@@ -109,7 +109,20 @@ https://codepen.io/CMonz/pen/xxZKjYb
 36. What is the command we would use to push our repo up to github? 
     git push origin masters
 37. Walk me through Lambda's git flow. 
-
+    First we fork from the original to add the files to our github account.
+    Then add our TL as a collaborator to the forked copy.
+    We then copy the clone link and clone the files to our local machine.
+    In git bash type git clone repo.link
+    Change directory to the local repo folder and create own branch:
+        git checkout -b "firstname-lastname".
+    After having worked on the file add repo changes and commit them
+        git add .
+        git commit -m "Comment"
+    Then push files from local to github account
+        git push -u origin "firstname-lastname"
+    Create pull request in our github branch
+    Add TL's as reviewers
+    TL will merge the Pull request
 
 Stretch Questions
 
@@ -118,8 +131,16 @@ Stretch Questions
     Block elements start on a new line and take up the whole page.
 2. What happens when an element is positioned absolutely?
     Positioned relative to first positioned parent element
-3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+3. How do I make an element take up only the amount of space it needs but also have the ability to 
+    give it a width? 
     Make it inline-block
-4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and
+     1 element 
+    that is display inline-block by default
     Block: <p> <ul> <div>, Inline: <a> <span>, inline-block: <img>
-5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them?
+5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how 
+    do we make all elements respect the width we've given them?
+    The box model is the space an element takes up on the webpage. It consists of the margin, padding, 
+    border, anything that takes up space on the page.
+    The "fix" for the box model is flexbox. Flexbox will set the padding, margins, etc. for us as we 
+    want them displayed on the screen.
